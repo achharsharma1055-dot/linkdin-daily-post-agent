@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_API_KEY = "AQ.Ab8RN6Jutt5n2XU3lXNxEIUUrPb2-CHUwrEZOuc3eigG0JYLOQ"
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", DEFAULT_API_KEY)
 
-# 6 DYNAMIC LUXURY COLOR THEMES
+# 6 DYNAMIC COLOR THEMES
 PALETTES = [
     {
         "id": "cyber-blue",
@@ -76,7 +76,7 @@ PALETTES = [
 POST_ARCHIVE = [
     {
         "structure": "serp_stack",
-        "badge": "TECHNICAL AUDIT • SEARCH ENGINE BOT",
+        "badge": "TECHNICAL AUDIT • SEARCH BOT",
         "stat_pill": "📊 +84% Crawl Efficiency",
         "search_mockup": "google crawl budget optimization 2026",
         "serp_tag": "#1 TOP RANK",
@@ -96,7 +96,7 @@ POST_ARCHIVE = [
                 "desc": "Aapke 2 alag blog posts ek hi primary keyword target karte hain — Google dono ki ranking gira deta hai."
             },
             {
-                "tag": "CORE PERFORMANCE", "num": "03",
+                "tag": "CORE SPEED", "num": "03",
                 "icon": """<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>""",
                 "title": "INP & Server Response Spikes",
                 "desc": "Heavy JavaScript execution aur slow TTFB response mobile interaction score 50ms se kharab kar deta hai."
@@ -125,9 +125,9 @@ Kya aapne recently search fluctuations face kiya? Comment me discuss karte hain!
     },
     {
         "structure": "matrix_grid",
-        "badge": "🔥 SGE & AI SEARCH MATRIX • STRATEGY 2026",
+        "badge": "🔥 SGE & AI SEARCH MATRIX",
         "stat_pill": "⚡ 3.4x Higher Citation CTR",
-        "alert_ribbon": "CRITICAL AI ALGORITHM PARADIGM SHIFT",
+        "alert_ribbon": "CRITICAL AI ALGORITHM SHIFT",
         "title_main": "Google AI Overviews <span class='hl'>Se Traffic Bachao!</span>",
         "subtitle": "Zero-click searches ke dauran website par targeted organic traffic laane ke 4 pillars:",
         "grid_cards": [
@@ -152,7 +152,7 @@ Kya aapne recently search fluctuations face kiya? Comment me discuss karte hain!
             {
                 "tag": "PILLAR 4",
                 "icon": """<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M14.83 9.17l4.24-4.24M14.83 14.83l4.24 4.24M9.17 14.83l-4.24 4.24"/></svg>""",
-                "title": "High-Intent Bottom Funnel",
+                "title": "High-Intent Funnel",
                 "desc": "Generic informational keywords ke bajaye decision-making aur commercial queries target karo."
             }
         ],
@@ -178,98 +178,6 @@ Complex troubleshooting aur high-intent commercial keywords target karo.
 Aapke analytics me AI search ka koi impact dikha abhi tak? Share your experience! 👇
 
 #AISEO #GoogleSearch #AIOverwiews #DigitalMarketing #FutureOfSEO #ContentCreators"""
-    },
-    {
-        "structure": "matrix_grid",
-        "badge": "🛡️ E-E-A-T BLUEPRINT • ALGORITHM DEFENSE",
-        "stat_pill": "👑 100% Trust Authority",
-        "alert_ribbon": "HELPFUL CONTENT STRICT AUDIT",
-        "title_main": "Google E-E-A-T <span class='hl'>Score Boost Karo!</span>",
-        "subtitle": "Bina real author credentials aur proof ke Google 2026 me rank nahi karega:",
-        "grid_cards": [
-            {
-                "tag": "EXPERIENCE",
-                "icon": """<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>""",
-                "title": "Author Social Footprint",
-                "desc": "Verified LinkedIn profiles aur past industry credentials link karo."
-            },
-            {
-                "tag": "EXPERTISE",
-                "icon": """<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>""",
-                "title": "No Fake Generic Stock Media",
-                "desc": "Real dashboard screenshots aur tools workflow proof embed karo."
-            },
-            {
-                "tag": "AUTHORITY",
-                "icon": """<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>""",
-                "title": "Scientific Source Citations",
-                "desc": "Har statistic claim karne se pehle authoritative original study quote karo."
-            },
-            {
-                "tag": "TRUST",
-                "icon": """<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>""",
-                "title": "Transparent Brand Identity",
-                "desc": "Editorial policy, fact-checking process aur privacy standard maintain karo."
-            }
-        ],
-        "golden_rule": "Algorithm author ki authority scan karta hai — build a personal brand!",
-        "caption": """Google Helpful Content Update ke baad agar traffic freeze ho gaya hai, to fix E-E-A-T! 🔍
-
-Google ab anonymous websites ko rank nahi deta.
-
-Quick 4 Fixes Aaj Hi Implement Karo:
-1. Author Bio Pages with LinkedIn links
-2. Real Proof & Screenshots
-3. Original Survey Data
-4. Direct Source Attribution
-
-Trust earn karo, ranking apne aap follow karegi! 🚀
-
-#EEAT #GoogleTrust #SEOAudit #SearchConsole #ContentStrategy"""
-    },
-    {
-        "structure": "serp_stack",
-        "badge": "⚡ SEMANTIC SEO • SEARCH INTENT HACK",
-        "stat_pill": "🎯 0% Bounce Rate",
-        "search_mockup": "semantic search entities vs keyword stuffing",
-        "serp_tag": "#1 FEATURED",
-        "title_main": "Keyword Stuffing Chhodo, <span class='hl'>Semantic Entities Sikho!</span>",
-        "subtitle": "Google ab keywords nahi, topic ka complete context aur search intent samajhta hai:",
-        "cards": [
-            {
-                "tag": "ENTITY COVERAGE", "num": "01",
-                "icon": """<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>""",
-                "title": "Topical Authority Clusters",
-                "desc": "Ek keyword baar-baar likhne ke bajaye us topic se jude saare sub-concepts cover karo."
-            },
-            {
-                "tag": "NLP VOCABULARY", "num": "02",
-                "icon": """<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>""",
-                "title": "Natural Conversational Synonyms",
-                "desc": "Voice search aur conversational queries me log jo real phrases use karte hain unhe inject karo."
-            },
-            {
-                "tag": "IMMEDIATE VALUE", "num": "03",
-                "icon": """<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>""",
-                "title": "First 100 Words Direct Answer",
-                "desc": "User ke click karte hi seedhe point par aao — Featured Snippet win karne ka ye sabse bada hack hai."
-            }
-        ],
-        "golden_rule": "Humans ke liye likho, entities ke liye optimize karo — Google AI frequency nahi, context padhta hai!",
-        "caption": """Stop stuffing keywords like it's 2012! ❌
-
-Google ka search algorithm ab itna smart ho chuka hai ki keyword density se ranking nahi milti.
-
-Ab game hai 'Semantic SEO' aur 'Topical Authority' ka. 🚀
-
-3 Rules:
-1. Entities & Sub-topics cover karo
-2. Intro paragraph me direct answer deliver karo
-3. Search Intent > Keyword Volume
-
-Write for humans, optimize for context!
-
-#SemanticSEO #OnPageSEO #ContentMarketing #GoogleRanking"""
     }
 ]
 
@@ -278,8 +186,8 @@ HTML_TEMPLATE = """
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>LinkedIn Multi-Structure SEO Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>LinkedIn SEO Studio • 100% Mobile Friendly</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -287,13 +195,22 @@ HTML_TEMPLATE = """
   <style>
     :root {
       --bg: #030712;
-      --card-bg: rgba(15, 23, 42, 0.85);
+      --card-bg: rgba(15, 23, 42, 0.9);
       --border: rgba(255, 255, 255, 0.1);
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      width: 100%;
+      overflow-x: hidden;
       background-color: var(--bg);
       background-image: 
         radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.1) 0%, transparent 45%),
@@ -301,10 +218,15 @@ HTML_TEMPLATE = """
       font-family: 'Plus Jakarta Sans', sans-serif;
       color: var(--text-main);
       min-height: 100vh;
-      padding: 24px 16px;
       -webkit-font-smoothing: antialiased;
     }
-    .container { max-width: 1250px; margin: 0 auto; }
+
+    .container {
+      width: 100%;
+      max-width: 1250px;
+      margin: 0 auto;
+      padding: 16px 12px;
+    }
 
     /* HEADER */
     .header {
@@ -312,44 +234,53 @@ HTML_TEMPLATE = """
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 16px;
-      padding-bottom: 22px;
+      gap: 12px;
+      padding-bottom: 18px;
       border-bottom: 1px solid var(--border);
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
-    .brand { display: flex; align-items: center; gap: 14px; }
+
+    .brand { display: flex; align-items: center; gap: 12px; }
+
     .logo-vector {
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
       background: linear-gradient(135deg, #38bdf8, #f43f5e);
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 900;
-      font-size: 20px;
+      font-size: 18px;
       color: #030712;
-      box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+      flex-shrink: 0;
     }
-    .title-group h1 { font-size: 24px; font-weight: 900; letter-spacing: -0.02em; }
-    .title-group p { color: var(--text-muted); font-size: 13px; }
 
-    /* NEW POST GENERATOR HUB */
+    .title-group h1 { font-size: 20px; font-weight: 900; letter-spacing: -0.02em; }
+    .title-group p { color: var(--text-muted); font-size: 12px; }
+
+    /* GENERATOR HUB */
     .generator-hub {
       background: rgba(15, 23, 42, 0.7);
       border: 1px solid rgba(56, 189, 248, 0.25);
-      border-radius: 18px;
-      padding: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.7);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 25px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 15px;
+      flex-direction: column;
+      gap: 14px;
     }
-    .hub-info h3 { font-size: 17px; font-weight: 800; color: #38bdf8; margin-bottom: 4px; }
-    .hub-info p { font-size: 13px; color: var(--text-muted); }
+
+    @media (min-width: 600px) {
+      .generator-hub {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .hub-info h3 { font-size: 16px; font-weight: 800; color: #38bdf8; margin-bottom: 4px; }
+    .hub-info p { font-size: 12px; color: var(--text-muted); }
 
     .btn-generate-fresh {
       background: linear-gradient(135deg, #0284c7 0%, #7c3aed 50%, #f43f5e 100%);
@@ -357,18 +288,23 @@ HTML_TEMPLATE = """
       animation: grad 4s ease infinite;
       color: #fff;
       font-weight: 800;
-      font-size: 15px;
-      padding: 14px 28px;
+      font-size: 14px;
+      padding: 12px 20px;
       border-radius: 12px;
       border: none;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      box-shadow: 0 4px 25px rgba(2, 132, 199, 0.45);
-      transition: all 0.2s;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 20px rgba(2, 132, 199, 0.45);
+      width: 100%;
     }
-    .btn-generate-fresh:hover { transform: translateY(-2px); box-shadow: 0 6px 30px rgba(2, 132, 199, 0.65); }
+
+    @media (min-width: 600px) {
+      .btn-generate-fresh { width: auto; }
+    }
+
     @keyframes grad {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
@@ -378,56 +314,76 @@ HTML_TEMPLATE = """
     /* POSTS GRID */
     .posts-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
-      gap: 35px;
+      grid-template-columns: 1fr;
+      gap: 25px;
       margin-bottom: 40px;
+      width: 100%;
     }
-    @media (max-width: 650px) {
-      .posts-grid { grid-template-columns: 1fr; }
+
+    @media (min-width: 900px) {
+      .posts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
     }
 
     .post-panel {
       background: var(--card-bg);
       border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 24px;
+      border-radius: 18px;
+      padding: 16px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      box-shadow: 0 15px 45px -15px rgba(0, 0, 0, 0.7);
-    }
-    .panel-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-    .panel-tag {
-      font-size: 14px;
-      font-weight: 800;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      padding: 6px 14px;
-      border-radius: 8px;
+      gap: 16px;
+      width: 100%;
+      overflow: hidden;
     }
 
-    /* CANVAS WRAPPERS (1080x1350) */
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .panel-tag {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 6px;
+    }
+
+    /* ========================================================
+       PERFECT RESPONSIVE CONTAINER (100% MOBILE SCREEN FIT)
+       ======================================================== */
     .render-wrapper {
       width: 100%;
-      border-radius: 18px;
+      border-radius: 14px;
       overflow: hidden;
       border: 1px solid var(--border);
       position: relative;
+      background: #000;
+      aspect-ratio: 1080 / 1350; /* Exact 4:5 LinkedIn portrait ratio */
     }
 
+    /* Fixed 1080x1350 canvas that scales down inside wrapper smoothly */
     .canvas-artboard {
       width: 1080px;
       height: 1350px;
-      padding: 70px 65px;
+      padding: 65px 55px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      position: relative;
+      position: absolute;
+      top: 0;
+      left: 0;
       overflow: hidden;
       transform-origin: top left;
       font-family: 'Plus Jakarta Sans', sans-serif;
       color: #fff;
-      transition: all 0.4s ease;
     }
 
     .mesh-grid {
@@ -455,49 +411,46 @@ HTML_TEMPLATE = """
       align-items: center;
       justify-content: space-between;
       gap: 15px;
-      margin: 22px 0;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      margin: 20px 0;
     }
 
     .stack-card {
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 20px;
-      padding: 22px 26px;
+      padding: 22px 24px;
       display: flex;
       align-items: flex-start;
-      gap: 20px;
+      gap: 18px;
       position: relative;
       overflow: hidden;
-      backdrop-filter: blur(16px);
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
     /* 2x2 MATRIX GRID */
     .matrix-grid-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-bottom: 22px;
+      gap: 18px;
+      margin-bottom: 20px;
     }
+
     .matrix-grid-card {
       border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 22px;
-      padding: 26px 24px;
+      border-radius: 20px;
+      padding: 24px 22px;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
       position: relative;
       overflow: hidden;
-      backdrop-filter: blur(16px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
 
     .golden-banner {
-      border-radius: 20px;
-      padding: 22px 28px;
+      border-radius: 18px;
+      padding: 20px 24px;
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 18px;
       position: relative;
       z-index: 1;
     }
@@ -505,25 +458,47 @@ HTML_TEMPLATE = """
     .caption-box {
       background: rgba(0, 0, 0, 0.45);
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 16px;
-      font-size: 14px;
+      border-radius: 12px;
+      padding: 14px;
+      font-size: 13px;
       line-height: 1.6;
       color: #e2e8f0;
-      max-height: 230px;
+      max-height: 200px;
       overflow-y: auto;
       white-space: pre-wrap;
+      width: 100%;
     }
 
-    .actions-row { display: flex; gap: 12px; flex-wrap: wrap; }
-    .btn {
-      flex: 1; min-width: 140px; padding: 13px 18px; border-radius: 12px;
-      font-weight: 700; font-size: 14px; cursor: pointer; text-align: center;
-      transition: all 0.2s; border: none; display: inline-flex; align-items: center;
-      justify-content: center; gap: 8px;
+    .actions-row {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      width: 100%;
     }
+
+    @media (min-width: 480px) {
+      .actions-row {
+        flex-direction: row;
+      }
+    }
+
+    .btn {
+      flex: 1;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      text-align: center;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+    }
+
     .btn-copy { background: rgba(255, 255, 255, 0.08); color: #f8fafc; border: 1px solid rgba(255, 255, 255, 0.15); }
-    .btn-copy:hover { background: rgba(255, 255, 255, 0.16); }
     .btn-dl { background: linear-gradient(135deg, #0284c7, #2563eb); color: #fff; }
     .toast-active { background: #10b981 !important; color: #fff !important; }
   </style>
@@ -535,11 +510,11 @@ HTML_TEMPLATE = """
       <div class="brand">
         <div class="logo-vector">⚡</div>
         <div class="title-group">
-          <h1>Achhar Sharma • Multi-Structure SEO Studio</h1>
-          <p>Different Layout Structures • Distinct Color Palettes • Instant Topic Generator</p>
+          <h1>Achhar Sharma • SEO Studio</h1>
+          <p>100% Mobile Responsive • 4K Vector Export</p>
         </div>
       </div>
-      <div style="font-size: 13px; color: #34d399; font-weight: 700; display: flex; align-items: center; gap: 6px;">
+      <div style="font-size: 12px; color: #34d399; font-weight: 700; display: flex; align-items: center; gap: 6px;">
         <span style="width: 8px; height: 8px; border-radius: 50%; background: #34d399;"></span>
         24/7 Cloud Active
       </div>
@@ -549,7 +524,7 @@ HTML_TEMPLATE = """
     <div class="generator-hub">
       <div class="hub-info">
         <h3>✨ On-Demand Post & Color-Structure Generator</h3>
-        <p>Click karte hi Naya Topic, Naya Color Theme aur Naya Post Structure generate hoga!</p>
+        <p>Har click par Naya Topic, Naya Color Theme aur Naya Post Structure aayega!</p>
       </div>
       <button class="btn-generate-fresh" onclick="generateNewBatch()" id="genBtn">
         🎲 Generate Fresh Topics & New Colors Now
@@ -557,16 +532,17 @@ HTML_TEMPLATE = """
     </div>
 
     <!-- POSTS GRID -->
-    <div class="posts-grid" id="postsContainer">
+    <div class="posts-grid">
       {% for p in posts %}
-      <div class="post-panel" id="panel-{{ p.id }}">
+      <div class="post-panel">
         <div class="panel-header">
           <div class="panel-tag" style="background: {{ p.theme.pill_bg }}; color: {{ p.theme.primary }}; border: 1px solid {{ p.theme.pill_border }};">
-            POST {{ p.id }}: {{ p.theme.id | upper }} • {{ p.data.structure | upper }}
+            POST {{ p.id }}: {{ p.theme.id | upper }}
           </div>
-          <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-muted);">1080x1350 4K</div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-muted);">1080x1350 4K</div>
         </div>
 
+        <!-- RESPONSIVE 100% FIT WRAPPER -->
         <div class="render-wrapper" id="wrapper-{{ p.id }}">
           <div class="canvas-artboard" id="canvas-{{ p.id }}" style="
             background-color: {{ p.theme.bg }};
@@ -598,7 +574,7 @@ HTML_TEMPLATE = """
             </div>
             {% else %}
             <!-- STRUCTURE B: ALERT RIBBON -->
-            <div style="background: {{ p.theme.pill_bg }}; border: 1px solid {{ p.theme.pill_border }}; border-radius: 16px; padding: 14px 22px; display: flex; align-items: center; justify-content: space-between; margin: 22px 0; position: relative; z-index: 1;">
+            <div style="background: {{ p.theme.pill_bg }}; border: 1px solid {{ p.theme.pill_border }}; border-radius: 16px; padding: 14px 22px; display: flex; align-items: center; justify-content: space-between; margin: 20px 0; position: relative; z-index: 1;">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <span style="font-size: 20px;">🚨</span>
                 <span style="font-size: 16px; font-weight: 800; color: #f8fafc;">{{ p.data.alert_ribbon }}</span>
@@ -615,7 +591,7 @@ HTML_TEMPLATE = """
 
             {% if p.data.structure == 'serp_stack' %}
             <!-- CARDS: STACK -->
-            <div style="display: flex; flex-direction: column; gap: 18px; margin-bottom: 22px; position: relative; z-index: 1;">
+            <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 20px; position: relative; z-index: 1;">
               {% for c in p.data.cards %}
               <div class="stack-card" style="background: {{ p.theme.card_bg }};">
                 <div style="position: absolute; left: 0; top: 0; width: 5px; height: 100%; background: {{ p.theme.primary }};"></div>
@@ -687,12 +663,13 @@ HTML_TEMPLATE = """
   </div>
 
   <script>
+    // 100% Precision Auto-Scaler for Mobile, Tablet & Desktop
     function rescaleCanvas() {
       [1, 2].forEach(id => {
         const wrapper = document.getElementById('wrapper-' + id);
         const canvas = document.getElementById('canvas-' + id);
         if (wrapper && canvas) {
-          const wrapperWidth = wrapper.clientWidth;
+          const wrapperWidth = wrapper.getBoundingClientRect().width;
           const scale = wrapperWidth / 1080;
           canvas.style.transform = `scale(${scale})`;
           wrapper.style.height = (1350 * scale) + 'px';
@@ -701,7 +678,9 @@ HTML_TEMPLATE = """
     }
 
     window.addEventListener('resize', rescaleCanvas);
-    window.addEventListener('DOMContentLoaded', rescaleCanvas);
+    window.addEventListener('orientationchange', rescaleCanvas);
+    document.addEventListener('DOMContentLoaded', rescaleCanvas);
+    setTimeout(rescaleCanvas, 300);
 
     function copyCaption(id, btn) {
       const text = document.getElementById(id).innerText;
@@ -773,7 +752,6 @@ HTML_TEMPLATE = """
 </html>
 """
 
-# Track active indices
 STATE_FILE = BASE_DIR / "state.json"
 
 def get_current_state():
@@ -794,7 +772,6 @@ def index():
     state = get_current_state()
     offset = state.get("offset", 0)
 
-    # Pick 2 distinct topics and 2 distinct color themes
     t1_idx = offset % len(POST_ARCHIVE)
     t2_idx = (offset + 1) % len(POST_ARCHIVE)
 

@@ -13,134 +13,221 @@ BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_API_KEY = "AQ.Ab8RN6Jutt5n2XU3lXNxEIUUrPb2-CHUwrEZOuc3eigG0JYLOQ"
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", DEFAULT_API_KEY)
 
-# 12 DISTINCT HIGH-END COLOR PALETTES
-PALETTES = [
-    {"id": "cyan", "name": "Cyber Neon", "p": "#00f2fe", "s": "#38bdf8", "bg": "#060a14", "radial": "radial-gradient(circle at 15% 15%, rgba(0,242,254,0.25) 0%, transparent 45%), radial-gradient(circle at 85% 85%, rgba(56,189,248,0.2) 0%, transparent 45%)", "card_bg": "rgba(10,20,38,0.85)", "pill_bg": "rgba(0,242,254,0.12)", "border": "rgba(0,242,254,0.4)"},
-    {"id": "flame", "name": "Sunset Fire", "p": "#fb923c", "s": "#f43f5e", "bg": "#140508", "radial": "radial-gradient(circle at 85% 15%, rgba(251,146,60,0.25) 0%, transparent 45%), radial-gradient(circle at 15% 85%, rgba(244,63,94,0.25) 0%, transparent 45%)", "card_bg": "rgba(35,12,18,0.85)", "pill_bg": "rgba(251,146,60,0.12)", "border": "rgba(251,146,60,0.4)"},
-    {"id": "emerald", "name": "Matrix Jade", "p": "#34d399", "s": "#10b981", "bg": "#031209", "radial": "radial-gradient(circle at 20% 20%, rgba(52,211,153,0.25) 0%, transparent 45%), radial-gradient(circle at 80% 80%, rgba(16,185,129,0.2) 0%, transparent 45%)", "card_bg": "rgba(6,28,17,0.85)", "pill_bg": "rgba(52,211,153,0.12)", "border": "rgba(52,211,153,0.4)"},
-    {"id": "purple", "name": "Hyper Violet", "p": "#c084fc", "s": "#7c3aed", "bg": "#0c0618", "radial": "radial-gradient(circle at 20% 20%, rgba(192,132,252,0.25) 0%, transparent 45%), radial-gradient(circle at 80% 80%, rgba(124,58,237,0.25) 0%, transparent 45%)", "card_bg": "rgba(26,12,48,0.85)", "pill_bg": "rgba(192,132,252,0.12)", "border": "rgba(192,132,252,0.4)"},
-    {"id": "gold", "name": "Royal Gold", "p": "#facc15", "s": "#ca8a04", "bg": "#120e03", "radial": "radial-gradient(circle at 20% 20%, rgba(250,204,21,0.25) 0%, transparent 45%), radial-gradient(circle at 80% 80%, rgba(202,138,4,0.2) 0%, transparent 45%)", "card_bg": "rgba(36,28,8,0.85)", "pill_bg": "rgba(250,204,21,0.12)", "border": "rgba(250,204,21,0.4)"},
-    {"id": "ruby", "name": "Blood Ruby", "p": "#fb7185", "s": "#e11d48", "bg": "#140407", "radial": "radial-gradient(circle at 80% 20%, rgba(251,113,133,0.25) 0%, transparent 45%), radial-gradient(circle at 20% 80%, rgba(225,29,72,0.25) 0%, transparent 45%)", "card_bg": "rgba(36,8,16,0.85)", "pill_bg": "rgba(251,113,133,0.12)", "border": "rgba(251,113,133,0.4)"},
-    {"id": "sapphire", "name": "Deep Sapphire", "p": "#60a5fa", "s": "#2563eb", "bg": "#040916", "radial": "radial-gradient(circle at 15% 15%, rgba(96,165,250,0.25) 0%, transparent 45%), radial-gradient(circle at 85% 85%, rgba(37,99,235,0.2) 0%, transparent 45%)", "card_bg": "rgba(10,24,48,0.85)", "pill_bg": "rgba(96,165,250,0.12)", "border": "rgba(96,165,250,0.4)"},
-    {"id": "lime", "name": "Electric Acid", "p": "#a3e635", "s": "#65a30d", "bg": "#081004", "radial": "radial-gradient(circle at 85% 15%, rgba(163,230,53,0.25) 0%, transparent 45%), radial-gradient(circle at 15% 85%, rgba(101,163,13,0.2) 0%, transparent 45%)", "card_bg": "rgba(18,28,8,0.85)", "pill_bg": "rgba(163,230,53,0.12)", "border": "rgba(163,230,53,0.4)"}
-]
-
-# 8 DIVERSE POST FORMATS & STRUCTURES (No two posts look the same!)
-POST_STRUCTURE_DATABASE = [
-    # STRUCTURE 1: THE BIG TYPOGRAPHY + 1 GIANT HERO STAT CARD
+# 7 MASTER FIGMA ARCHETYPES (BASED ON YOUR EXACT 7 PROMPTS)
+# Pure White Background (#FFFFFF) | Deep Green (#064E3B) | Charcoal Black (#0F172A) | Soft Grey (#F1F5F9) | Subtle Gold (#D97706)
+FIGMA_STYLES = [
+    # 1. PREMIUM EDITORIAL SEO POST
     {
-        "layout": "hero_giant",
-        "badge": "🚨 GOOGLE ALGORITHM SHIFT",
-        "stat": "+84% CRAWL RATE",
-        "title": "Search Console Me <span class='hl'>Indexing Zero?</span>",
-        "subtitle": "90% creators panic me article delete karte hain, par asal galti ye single issue hoti hai:",
-        "hero_card": {
-            "tag": "CRITICAL BOTTLENECK",
-            "val": "Orphan URLs & Filter Parameters",
-            "desc": "Robots.txt check karo — hazaron sorting parameters Googlebot ka daily crawl budget drain kar dete hain, aur main pages unindexed reh jaate hain."
-        },
-        "points": [
-            {"title": "Canonical Tag Missing", "desc": "Duplicate filter pages ko direct canonicalize karo."},
-            {"title": "Internal Link Depth > 3", "desc": "Important pages tak pahuchne ke liye 3+ clicks lag rahe hain."}
+        "id": "style_1",
+        "name": "1. Premium Editorial SEO Post",
+        "tag": "EDITORIAL FIGMA SPEC",
+        "badge": "SEO INTELLIGENCE • ISSUE #42",
+        "headline_pre": "THE ALGORITHMIC SHIFT",
+        "headline_main": "Why Traditional SEO <span class='green-hl'>Is Dying</span> (And What Replaces It)",
+        "keyword_oversized": "SEMANTIC RELEVANCE",
+        "data_nodes": [
+            {"label": "ENTITY NODES", "val": "4.8x Depth", "desc": "Contextual cluster connection over single keyword stuffing."},
+            {"label": "INDEX PRIORITY", "val": "#1 SERP", "desc": "Clean internal link architecture with zero crawl budget leaks."},
+            {"label": "INFORMATION GAIN", "val": "+92% Score", "desc": "Original proprietary datasets rewarded by modern search engines."}
         ],
-        "golden_rule": "Traffic drop hone par naya article mat likho, pehle internal links audit karo!",
-        "caption": """🚨 Search Console me 'Discovered - Currently Not Indexed' URLs badh rahe hain?
+        "metric_badge": "🏆 99.4% TOPICAL AUTHORITY",
+        "micro_label": "DATA FLOW ARCHITECTURE // V4.2",
+        "golden_rule": "Search engines don't index pages anymore — they index topical authority entities.",
+        "caption": """The Algorithmic Shift: Why Traditional SEO Is Dying! 📉✨
 
-90% cases me content kharab nahi hota, crawl budget drain ho raha hota hai!
+2026 me keywords repeat karna band karo. Modern algorithms 'Semantic Relevance' aur 'Entity Graphs' padhte hain.
 
-1️⃣ Filter URLs Trap:
-E-commerce ya blog search filters hazaron useless URLs banate hain jo crawl limit kha jaate hain.
+Key Editorial Breakdown:
+1️⃣ Entity Depth (4.8x): Single keyword ke bajaye complete cluster dominate karo.
+2️⃣ Index Priority: Crawl budget ko orphan pages me waste mat hone do.
+3️⃣ Information Gain (+92%): Jo data Google ke paas nahi hai, wo share karo.
 
-2️⃣ Orphan Pages:
-Agar kisi page ko site me kahi se internal link nahi mila, to Googlebot use de-prioritize kar deta hai.
+Search engines don't index pages anymore — they index entities!
 
-Fix: GSC > Performance tab me compare last 28 days! 💬
-
-#SEO #TechnicalSEO #GoogleAlgorithm #SearchConsole #WebPerformance"""
+#SEOStrategy #SemanticSEO #TopicalAuthority #SearchEngineOptimization #DigitalGrowth"""
     },
 
-    # STRUCTURE 2: 2x2 SPLIT MATRIX QUADRANT (4 High-Impact Pillars)
+    # 2. SEO DATA DASHBOARD STYLE
     {
-        "layout": "matrix_4",
-        "badge": "⚡ SGE & AI SEARCH MATRIX",
-        "stat": "3.4x CITATION CTR",
-        "title": "Google AI Overviews Se <span class='hl'>Traffic Bachao!</span>",
-        "subtitle": "Zero-click searches ke dauran website par targeted organic traffic laane ke 4 pillars:",
-        "matrix": [
-            {"num": "01", "tag": "FIRST-PARTY DATA", "title": "Real Test Case Studies", "desc": "Original data aur screenshot proof do jo AI generate na kar sake."},
-            {"num": "02", "tag": "INVERTED PYRAMID", "title": "Direct 35-Word Hook", "desc": "H2 ke turant baad crisp answer do — AI wahi se quote karta hai."},
-            {"num": "03", "tag": "COMPARISON TABLES", "title": "Structured HTML Tables", "desc": "Comparison tables aur FAQ schema AI sabse fast parse karta hai."},
-            {"num": "04", "tag": "HIGH INTENT FUNNEL", "title": "Decision Keywords", "desc": "Broad keywords chhod kar commercial decision queries target karo."}
+        "id": "style_2",
+        "name": "2. SEO Data Dashboard Style",
+        "tag": "DASHBOARD ANALYTICS UI",
+        "badge": "REAL-TIME SERP METRICS",
+        "headline_pre": "PERFORMANCE PULSE",
+        "headline_main": "Core Web Vitals <span class='green-hl'>INP Benchmark</span>",
+        "keyword_oversized": "+340% TRAFFIC",
+        "data_nodes": [
+            {"label": "LCP SPEED", "val": "0.8s (PASS)", "desc": "Server-side rendering with critical image preloading."},
+            {"label": "INP DELAY", "val": "42ms (OPTIMAL)", "desc": "Zero JavaScript main-thread blocking on user tap."},
+            {"label": "INDEX EFFICIENCY", "val": "98.2%", "desc": "100% crawl budget directed to revenue-generating URLs."}
         ],
-        "golden_rule": "AI summary ka rival mat bano, uska verified source bano!",
-        "caption": """AI Overviews organic clicks kha raha hai? Game evolve ho gaya hai! 🤖📉
+        "metric_badge": "⚡ GOOGLE SPEED SCORE: 100/100",
+        "micro_label": "CONSOLE METRICS // LIVE AUDIT",
+        "golden_rule": "Under 2.5s speed is good, but <100ms INP interactivity is what wins page 1 rankings.",
+        "caption": """Core Web Vitals & INP: Real-Time Performance Dashboard ⚡📊
 
-Google AI summaries me top source banne ke 4 Pillars:
-1. First-Party Experiment Data
-2. Inverted Pyramid Direct Answers
-3. HTML Comparison Tables
-4. Bottom-Funnel Search Intent
+March Core Update ke baad agar mobile ranking drop hui hai, to INP check karo:
 
-Aapka traffic AI updates ke baad badha ya kam hua? Share in comments! 👇
+🔹 LCP: Under 1.2s hona mandatory hai
+🔹 INP: <50ms interactivity without main-thread blocking
+🔹 Index Ratio: 98%+ valid crawl efficiency
 
-#AISEO #GoogleSearch #AIOverwiews #DigitalMarketing #FutureOfSEO"""
+Speed user experience hai, aur user experience hi ranking factor hai! 🚀
+
+#CoreWebVitals #TechSEO #PageSpeed #GoogleConsole #SEOPerformance"""
     },
 
-    # STRUCTURE 3: HORIZONTAL 3-STEP FLOW CARDS + SEARCH BAR UI
+    # 3. BOLD TYPOGRAPHY + MOTION GRAPHICS
     {
-        "layout": "search_steps",
-        "badge": "🔍 SEARCH INTENT MASTERY",
-        "stat": "0% BOUNCE RATE",
-        "search_ui": "search intent vs keyword density 2026",
-        "title": "Keyword Stuffing Chhodo, <span class='hl'>Search Intent Sikho!</span>",
-        "subtitle": "2026 me Google keywords nahi, topic ka complete context aur satisfaction score dekhta hai:",
-        "steps": [
-            {"num": "STEP 1", "title": "Analyze Top 3 Competitor Formats", "desc": "Dekho Google kis format ko reward kar raha hai: Guide, Table ya Tool?"},
-            {"num": "STEP 2", "title": "First 100 Words Direct Resolution", "desc": "User ke click karte hi seedhe point par aao bina background story ke."},
-            {"num": "STEP 3", "title": "Cover PAA (People Also Ask) Queries", "desc": "Related sub-questions solve karo taaki Featured Snippets win ho sakein."}
+        "id": "style_3",
+        "name": "3. Bold Typography + Motion Graphics",
+        "tag": "KINETIC TYPOGRAPHY",
+        "badge": "MOTION GRAPHIC FRAME #08",
+        "headline_pre": "THE BRUTAL REALITY",
+        "headline_main": "Content Fails When <span class='gold-hl'>It's Forgettable</span>",
+        "keyword_oversized": "REUSE OR DIE",
+        "data_nodes": [
+            {"label": "STEP 01", "val": "Direct Resolution", "desc": "First 50 words must give the primary answer — zero introduction fluff."},
+            {"label": "STEP 02", "val": "Proprietary Terminology", "desc": "Name your strategies so humans repeat and LLMs quote them."},
+            {"label": "STEP 03", "val": "Structured Tables", "desc": "HTML comparison matrices get parsed 10x faster by AI bots."}
         ],
-        "golden_rule": "Users ke satisfaction ke liye likho, search algorithms apne aap reward karenge!",
-        "caption": """Keywords rank karwa liye, par dwell time zero hai? ❌
+        "metric_badge": "🔥 3.4x HIGHER DWELL TIME",
+        "micro_label": "ATTENTION CURVE // DYNAMICS",
+        "golden_rule": "If people can't easily repeat what you said, search algorithms will never cite it.",
+        "caption": """Most Content Fails Not Because It's Bad... But Because It's Forgettable! 💡🎯
 
-Kyunki aapne keyword to pakad liya, par Search Intent match nahi kiya!
+AI search aur readers dono generic theory se thak chuke hain.
 
-🔹 1. Identify Format: User ko comparison table chahiye ya direct tutorial?
-🔹 2. Answer in Intro: Pehle 20 seconds me primary doubt clear karo.
-🔹 3. Solve PAA Queries: Featured Snippet win karne ka shortcut!
+3 Kinetic Rules:
+1. Direct Resolution: Intro paragraph me direct answer do.
+2. Named Strategies: Apni methodology ka naam rakho taaki log quote karein.
+3. Structured Matrices: Comparison tables use karo.
 
-#SearchIntent #OnPageSEO #ContentMarketing #DigitalStrategy #SEOExpert"""
+Be memorable, not just readable!
+
+#ContentMarketing #PersonalBranding #SEO #DigitalStrategy #Creators"""
     },
 
-    # STRUCTURE 4: BEFORE vs AFTER SPLIT COMPARISON (Mistake vs Pro Strategy)
+    # 4. 3D SEO OBJECTS + INFORMATION CARDS
     {
-        "layout": "split_compare",
-        "badge": "⚠️ LINK BUILDING TRUTH",
-        "stat": "10x DOMAIN AUTHORITY",
-        "title": "Spam PBN Backlinks <span class='hl'>vs Digital PR Links</span>",
-        "subtitle": "Google SpamBrain AI ab paid guest post patterns ko 1 second me detect kar leta hai:",
-        "compare": [
-            {
-                "type": "MISTAKE (OLD 2018)",
-                "color": "#ef4444",
-                "points": ["₹500 me 1000 bulk Fiverr links", "Irrelevant niche websites se links", "Manipulated exact-match anchor text"]
-            },
-            {
-                "type": "WINNING STRATEGY (2026)",
-                "color": "#10b981",
-                "points": ["Original data study aur industry surveys", "Free micro-utility tool (e.g. ROI Calculator)", "Editorial context brand mentions"]
-            }
+        "id": "style_4",
+        "name": "4. 3D SEO Objects + Information Cards",
+        "tag": "SPATIAL 3D VECTOR UI",
+        "badge": "SEARCH ENGINE ARCHITECTURE",
+        "headline_pre": "ZERO-CLICK SEARCH",
+        "headline_main": "How To Win <span class='green-hl'>Google AI Overviews</span>",
+        "keyword_oversized": "TOP CITATION",
+        "data_nodes": [
+            {"label": "INVERTED HOOK", "val": "H2 Definition", "desc": "Direct 35-word crisp synopsis positioned above the fold."},
+            {"label": "FIRST-PARTY DATA", "val": "Live Studies", "desc": "Original data points that LLMs cannot synthesize independently."},
+            {"label": "FAQ SCHEMA", "val": "Schema Markup", "desc": "Valid JSON-LD structured data linking author credentials."}
         ],
-        "golden_rule": "1 relevant editorial link = 500 spam links. Quality always wins!",
-        "caption": """Fiverr pe ₹500 me 1000 Backlinks khareed rahe ho? Stop it! ❌
+        "metric_badge": "💎 +380% CITATION CLICKS",
+        "micro_label": "SPATIAL CARDS // FIGMA 3D",
+        "golden_rule": "Don't fight AI summaries — become their primary clickable data source.",
+        "caption": """Zero-Click Searches: How To Win Google AI Overviews 🤖💎
 
-2026 me Backlink strategy aisi honi chahiye:
-- Relevancy > Domain Rating
-- Digital PR Studies launch karo
-- Micro tools banao jise log natural link karein
+AI summaries traffic de rahi hain, lekin sirf unhe jo primary source bante hain!
 
-Quality always beats quantity! 🚀
+3 Strategic Cards:
+✅ Inverted Hook: H2 ke niche direct definition
+✅ First-Party Proof: Real client experiments
+✅ Structured Schema: Machine-readable data
 
-#LinkBuilding #OffPageSEO #SEOStrategy #Backlinks #GrowthHacking"""
+Become the citation source, not the generic follower! 🚀
+
+#AISEO #GoogleSGE #FutureOfSearch #TechSEO #ContentGrowth"""
+    },
+
+    # 5. SEO BLUEPRINT / TECHNICAL DIAGRAM STYLE
+    {
+        "id": "style_5",
+        "name": "5. SEO Blueprint / Technical Diagram Style",
+        "tag": "SYSTEM BLUEPRINT SPEC",
+        "badge": "TECHNICAL INFRASTRUCTURE",
+        "headline_pre": "CRAWL TOPOLOGY",
+        "headline_main": "Crawl Budget <span class='green-hl'>Zero-Waste Protocol</span>",
+        "keyword_oversized": "CLEAN PIPELINE",
+        "data_nodes": [
+            {"label": "NODE A: ROBOTS.TXT", "val": "Block Filters", "desc": "Prevent bot access to pagination, session IDs & sort parameters."},
+            {"label": "NODE B: CANONICALS", "val": "100% Self-Ref", "desc": "Enforce strict self-referential canonical tags on master URLs."},
+            {"label": "NODE C: INTERNAL GRAPH", "val": "Depth ≤ 3 Clicks", "desc": "Ensure high-converting pages are reachable within 3 clicks."}
+        ],
+        "metric_badge": "🛡️ 100% HEALTH SCORE",
+        "micro_label": "BLUEPRINT TOPOLOGY // SYS-88",
+        "golden_rule": "Every crawl request wasted on a junk URL is a revenue page Googlebot ignores.",
+        "caption": """Technical SEO Blueprint: Crawl Budget Zero-Waste Protocol 📐🛠️
+
+Search Console me 'Discovered - Currently Not Indexed' aa raha hai? Blueprint check karo:
+
+Node 1: Robots.txt me useless sorting parameters block karo.
+Node 2: Canonicals strictly audit karo.
+Node 3: Click depth under 3 clicks rakho.
+
+Architecture matters more than keywords!
+
+#TechnicalSEO #CrawlBudget #SearchConsole #WebArchitecture #SEOAudit"""
+    },
+
+    # 6. MODERN AI + SEO MOTION POST
+    {
+        "id": "style_6",
+        "name": "6. Modern AI + SEO Motion Post",
+        "tag": "NEURAL INTERFACE SPEC",
+        "badge": "LLM OPTIMIZATION • 2026",
+        "headline_pre": "NEURAL RETRIEVAL",
+        "headline_main": "Generative Engine <span class='green-hl'>Optimization (GEO)</span>",
+        "keyword_oversized": "LLM VISIBILITY",
+        "data_nodes": [
+            {"label": "VECTOR EMBEDDING", "val": "High Cosine Sim", "desc": "Semantic vectors matching common conversational prompts."},
+            {"label": "CREDIBILITY SIGNALS", "val": "E-E-A-T Verified", "desc": "Author footprint indexed across authoritative knowledge graphs."},
+            {"label": "CONVERSATIONAL INTENT", "val": "Multi-Turn", "desc": "Content structured to resolve multi-step complex workflows."}
+        ],
+        "metric_badge": "🔮 5.2x BRAND CITATIONS",
+        "micro_label": "NEURAL GRAPH // V2.6",
+        "golden_rule": "Traditional SEO targets rank position. GEO targets AI knowledge base inclusion.",
+        "caption": """Generative Engine Optimization (GEO): The Next Frontier 🤖🌐
+
+Rank 1 par aana kafi nahi hai — AI models aapko apni memory me rakhein, ye naya target hai.
+
+3 GEO Dimensions:
+🔹 Vector Embeddings: Natural conversational vocabulary
+🔹 Author Footprint: Real verified E-E-A-T
+🔹 Multi-Turn Content: Deep problem solving
+
+Are you optimizing for search engines or for neural models?
+
+#GEO #GenerativeAI #FutureOfSEO #AIOptimization #DigitalStrategy"""
+    },
+
+    # 7. "INFORMATION EXPLODED" FIGMA STYLE
+    {
+        "id": "style_7",
+        "name": "7. Information Exploded Figma Style",
+        "tag": "EXPLODED INFORMATION SYSTEM",
+        "badge": "DISSECTED MECHANICS",
+        "headline_pre": "THE ANATOMY OF A #1 RANK",
+        "headline_main": "What Actually Drives <span class='gold-hl'>Organic Conversions</span>",
+        "keyword_oversized": "EXPLODED SYSTEM",
+        "data_nodes": [
+            {"label": "COMPONENT 1", "val": "High-Intent Keyword", "desc": "500-volume commercial query > 50,000 broad informational term."},
+            {"label": "COMPONENT 2", "val": "Above-The-Fold Value", "desc": "Pricing, comparison table or direct tool within first screen viewport."},
+            {"label": "COMPONENT 3", "val": "Frictionless CTA", "desc": "Single clear next action without intrusive popup banners."}
+        ],
+        "metric_badge": "📈 +410% REVENUE CONVERSION",
+        "micro_label": "SYSTEM DECONSTRUCTION // EXP-07",
+        "golden_rule": "Traffic is a vanity metric; bottom-funnel organic conversion is the real business metric.",
+        "caption": """The Exploded System: The Anatomy of a High-Converting #1 Rank! 💥📊
+
+Traffic badh raha hai par revenue zero hai? Aapke system ka fault samjho:
+
+1️⃣ High-Intent Keywords: Commercial searchers > Curiosity searchers
+2️⃣ Above-the-Fold Value: 3 seconds me value deliver karo
+3️⃣ Frictionless UX: Zero intrusive popups
+
+Stop optimizing for clicks. Start optimizing for revenue! 🔥
+
+#ConversionRate #SEOForBusiness #OrganicGrowth #DigitalMarketing #ROI"""
     }
 ]
 
@@ -150,18 +237,20 @@ HTML_TEMPLATE = """
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>LinkedIn Multi-Structure SEO Studio</title>
+  <title>Premium Figma White-Background SEO Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <style>
     :root {
-      --bg: #030712;
-      --card-bg: rgba(15, 23, 42, 0.9);
-      --border: rgba(255, 255, 255, 0.1);
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
+      --deep-green: #064e3b;
+      --emerald: #059669;
+      --charcoal: #0f172a;
+      --soft-grey: #f8fafc;
+      --border-grey: #e2e8f0;
+      --gold: #d97706;
+      --gold-light: #fbbf24;
     }
 
     * {
@@ -171,85 +260,70 @@ HTML_TEMPLATE = """
       -webkit-tap-highlight-color: transparent;
     }
 
-    html, body {
-      width: 100%;
-      overflow-x: hidden;
-      background-color: var(--bg);
+    body {
+      background-color: #0b0f19;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      color: var(--text-main);
+      color: #f8fafc;
       min-height: 100vh;
-      -webkit-font-smoothing: antialiased;
+      padding: 16px 12px;
+      overflow-x: hidden;
     }
 
     .container {
       width: 100%;
       max-width: 1250px;
       margin: 0 auto;
-      padding: 16px 12px;
     }
 
-    /* HEADER */
-    .header {
+    /* TOP HEADER */
+    .top-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       gap: 12px;
       padding-bottom: 16px;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       margin-bottom: 20px;
     }
 
-    .brand { display: flex; align-items: center; gap: 12px; }
-
-    .logo-vector {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, #00f2fe, #f43f5e);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 900;
+    .brand-title {
       font-size: 20px;
-      color: #030712;
-      flex-shrink: 0;
+      font-weight: 900;
+      letter-spacing: -0.02em;
     }
 
-    .title-group h1 { font-size: 20px; font-weight: 900; letter-spacing: -0.02em; }
-    .title-group p { color: var(--text-muted); font-size: 12px; }
+    .brand-sub {
+      font-size: 12px;
+      color: #94a3b8;
+    }
 
-    /* GENERATOR HUB */
-    .generator-hub {
-      background: rgba(15, 23, 42, 0.7);
-      border: 1px solid rgba(56, 189, 248, 0.25);
+    /* SHUFFLER HUB */
+    .shuffler-hub {
+      background: rgba(18, 24, 38, 0.85);
+      border: 1px solid rgba(5, 150, 105, 0.35);
       border-radius: 16px;
       padding: 16px;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
     }
 
     @media (min-width: 600px) {
-      .generator-hub {
+      .shuffler-hub {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
       }
     }
 
-    .hub-info h3 { font-size: 16px; font-weight: 800; color: #38bdf8; margin-bottom: 4px; }
-    .hub-info p { font-size: 12px; color: var(--text-muted); }
-
-    .btn-generate-fresh {
-      background: linear-gradient(135deg, #00f2fe 0%, #7c3aed 50%, #f43f5e 100%);
-      background-size: 200% 200%;
-      animation: grad 4s ease infinite;
+    .btn-shuffle {
+      background: linear-gradient(135deg, #064e3b 0%, #059669 50%, #d97706 100%);
       color: #fff;
       font-weight: 800;
       font-size: 14px;
-      padding: 13px 22px;
+      padding: 13px 24px;
       border-radius: 12px;
       border: none;
       cursor: pointer;
@@ -257,81 +331,69 @@ HTML_TEMPLATE = """
       align-items: center;
       justify-content: center;
       gap: 8px;
-      box-shadow: 0 4px 20px rgba(0, 242, 254, 0.45);
+      box-shadow: 0 4px 20px rgba(5, 150, 105, 0.4);
       width: 100%;
     }
 
     @media (min-width: 600px) {
-      .btn-generate-fresh { width: auto; }
+      .btn-shuffle { width: auto; }
     }
 
-    @keyframes grad {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    /* POSTS GRID */
+    /* POSTS FEED */
     .posts-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 25px;
+      gap: 30px;
       margin-bottom: 40px;
-      width: 100%;
     }
 
     @media (min-width: 900px) {
       .posts-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
       }
     }
 
     .post-panel {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 16px;
+      background: #111827;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 18px;
       display: flex;
       flex-direction: column;
       gap: 16px;
-      width: 100%;
       overflow: hidden;
     }
 
-    .panel-header {
+    .panel-top-tag {
+      font-size: 13px;
+      font-weight: 800;
+      color: #34d399;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 8px;
     }
 
-    .panel-tag {
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      padding: 5px 12px;
-      border-radius: 6px;
-    }
-
-    /* 100% FULL MOBILE VISIBLE CONTAINER */
-    .canvas-viewport-box {
+    /* ========================================================
+       100% PERFECT MOBILE FULL-SCREEN FIT VIEWPORT
+       ======================================================== */
+    .artboard-viewport {
       width: 100%;
       position: relative;
-      border-radius: 14px;
+      border-radius: 16px;
       overflow: hidden;
-      border: 1px solid var(--border);
-      background: #000;
-      /* Precise container height calculation for mobile */
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: #ffffff;
     }
 
-    /* 1080x1350 Canvas Artboard */
-    .artboard {
+    /* ========================================================
+       PURE WHITE FIGMA MASTER CANVAS (1080x1350)
+       Clean White Canvas • Deep Green • Charcoal • Gold
+       ======================================================== */
+    .figma-master-canvas {
       width: 1080px;
       height: 1350px;
-      padding: 65px 55px;
+      background: #ffffff;
+      padding: 70px 65px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -340,28 +402,299 @@ HTML_TEMPLATE = """
       left: 0;
       transform-origin: top left;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      color: #fff;
+      color: #0f172a;
+      overflow: hidden;
     }
 
-    .mesh-grid {
+    /* SUBTLE FIGMA TECHNICAL GRID LINES (WHITE BACKGROUND) */
+    .figma-blueprint-grid {
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
       background-size: 40px 40px;
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-image: 
+        linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
       pointer-events: none;
     }
 
-    .hl {
-      background: linear-gradient(135deg, var(--p-col), var(--s-col));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    /* HIGHLIGHT STYLING */
+    .green-hl {
+      color: #064e3b;
+      position: relative;
+      display: inline-block;
+    }
+
+    .green-hl::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 6px;
+      width: 100%;
+      height: 8px;
+      background: rgba(5, 150, 105, 0.18);
+      z-index: -1;
+      border-radius: 4px;
+    }
+
+    .gold-hl {
+      color: #b45309;
+      position: relative;
+      display: inline-block;
+    }
+
+    .gold-hl::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 6px;
+      width: 100%;
+      height: 8px;
+      background: rgba(217, 119, 6, 0.2);
+      z-index: -1;
+      border-radius: 4px;
+    }
+
+    /* FIGMA BADGES & MICRO LABELS */
+    .figma-badge-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .figma-badge-chip {
+      background: #f0fdf4;
+      border: 1.5px solid #86efac;
+      color: #064e3b;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 800;
+      padding: 8px 18px;
+      border-radius: 8px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .figma-badge-chip::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #059669;
+    }
+
+    .figma-metric-pill {
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
+      color: #0f172a;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 8px;
+    }
+
+    /* HEADLINE AREA */
+    .figma-headline-wrap {
+      margin: 20px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .figma-pre-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      font-weight: 800;
+      color: #059669;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .figma-pre-title::before {
+      content: '//';
+      color: #d97706;
+    }
+
+    .figma-headline-text {
+      font-size: 58px;
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: #0f172a;
+    }
+
+    /* OVERSIZED WATERMARK KEYWORD (PREMIUM FIGMA AGENCY TOUCH) */
+    .figma-watermark-keyword {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 72px;
+      font-weight: 900;
+      color: rgba(15, 23, 42, 0.04);
+      letter-spacing: -0.04em;
+      line-height: 1;
+      margin-top: -15px;
+      margin-bottom: 10px;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* 3 FLOATING HIGH-END FIGMA DATA CARDS */
+    .figma-nodes-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .figma-node-card {
+      background: #ffffff;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.04);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .figma-node-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: #059669;
+    }
+
+    .figma-node-left {
+      flex: 1;
+    }
+
+    .figma-node-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 800;
+      color: #059669;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .figma-node-desc {
+      font-size: 18px;
+      font-weight: 600;
+      color: #334155;
+      line-height: 1.45;
+    }
+
+    .figma-node-val-badge {
+      background: #0f172a;
+      color: #f8fafc;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      font-weight: 800;
+      padding: 10px 18px;
+      border-radius: 10px;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+    }
+
+    /* GOLDEN RULE FOOTER BANNER */
+    .figma-golden-rule-box {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 16px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .figma-gold-tag {
+      background: #d97706;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 900;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+
+    .figma-rule-text {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.4;
+    }
+
+    /* FOOTER SIGNATURE */
+    .figma-footer-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      border-top: 1.5px solid #f1f5f9;
+      position: relative;
+      z-index: 1;
+    }
+
+    .figma-author-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .figma-author-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #064e3b;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 17px;
+    }
+
+    .figma-author-name {
+      font-size: 18px;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .figma-author-title {
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    .figma-micro-watermark {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: #059669;
     }
 
     /* CAPTION BOX & ACTIONS */
     .caption-box {
       background: rgba(0, 0, 0, 0.45);
-      border: 1px solid var(--border);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 12px;
       padding: 14px;
       font-size: 13px;
@@ -370,14 +703,12 @@ HTML_TEMPLATE = """
       max-height: 200px;
       overflow-y: auto;
       white-space: pre-wrap;
-      width: 100%;
     }
 
     .actions-row {
       display: flex;
       gap: 10px;
       flex-direction: column;
-      width: 100%;
     }
 
     @media (min-width: 480px) {
@@ -399,199 +730,103 @@ HTML_TEMPLATE = """
       align-items: center;
       justify-content: center;
       gap: 6px;
-      width: 100%;
     }
 
     .btn-copy { background: rgba(255, 255, 255, 0.08); color: #f8fafc; border: 1px solid rgba(255, 255, 255, 0.15); }
-    .btn-dl { color: #fff; }
+    .btn-dl { background: linear-gradient(135deg, #064e3b, #059669); color: #fff; }
     .toast-active { background: #10b981 !important; color: #fff !important; }
   </style>
 </head>
 <body>
   <div class="container">
     <!-- Header -->
-    <div class="header">
-      <div class="brand">
-        <div class="logo-vector">⚡</div>
-        <div class="title-group">
-          <h1>Achhar Sharma • Multi-Structure Studio</h1>
-          <p>100% Mobile Full Screen Fit • Different Shapes & Colors</p>
-        </div>
+    <div class="top-header">
+      <div>
+        <div class="brand-title">Achhar Sharma • Figma Master SEO Studio</div>
+        <div class="brand-sub">Pure White Canvas • Deep Green & Gold • 7 High-End Design Archetypes</div>
       </div>
-      <div style="font-size: 12px; color: #34d399; font-weight: 700; display: flex; align-items: center; gap: 6px;">
-        <span style="width: 8px; height: 8px; border-radius: 50%; background: #34d399;"></span>
-        24/7 Cloud Active
-      </div>
+      <div style="font-size: 12px; color: #34d399; font-weight: 700;">● 24/7 Cloud Active</div>
     </div>
 
-    <!-- GENERATOR BUTTON -->
-    <div class="generator-hub">
-      <div class="hub-info">
-        <h3>🎲 Infinite Design & Topic Shuffler</h3>
-        <p>Click karte hi Naya Topic, Naya Layout Structure aur Naya Color Palette aayega!</p>
+    <!-- SHUFFLER BUTTON -->
+    <div class="shuffler-hub">
+      <div>
+        <h3 style="font-size: 16px; font-weight: 800; color: #34d399; margin-bottom: 2px;">🎲 7 Figma Design Archetypes Shuffler</h3>
+        <p style="font-size: 13px; color: #94a3b8;">Click karte hi Editorial, Data Dashboard, 3D Vector & Blueprint designs rotate honge!</p>
       </div>
-      <button class="btn-generate-fresh" onclick="generateNewBatch()" id="genBtn">
-        ✨ Generate Completely Different Post & Colors
+      <button class="btn-shuffle" onclick="shuffleFigmaPost()" id="shufBtn">
+        ✨ Generate Next Figma SEO Archetype
       </button>
     </div>
 
-    <!-- POSTS GRID -->
+    <!-- FEED -->
     <div class="posts-grid">
       {% for p in posts %}
       <div class="post-panel">
-        <div class="panel-header">
-          <div class="panel-tag" style="background: {{ p.theme.pill_bg }}; color: {{ p.theme.p }}; border: 1px solid {{ p.theme.border }};">
-            POST {{ p.id }}: {{ p.theme.name }} • {{ p.data.layout | upper }}
-          </div>
-          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-muted);">1080x1350 4K</div>
+        <div class="panel-top-tag">
+          <span>{{ p.name }}</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #94a3b8;">1080x1350 4K</span>
         </div>
 
-        <!-- 100% MOBILE VISIBLE VIEWPORT WRAPPER -->
-        <div class="canvas-viewport-box" id="viewport-{{ p.id }}">
-          <div class="artboard" id="artboard-{{ p.id }}" style="
-            background-color: {{ p.theme.bg }};
-            background-image: {{ p.theme.radial }};
-            --p-col: {{ p.theme.p }};
-            --s-col: {{ p.theme.s }};
-          ">
-            <div class="mesh-grid"></div>
+        <!-- 100% MOBILE FULL VISIBLE VIEWPORT WRAPPER -->
+        <div class="artboard-viewport" id="viewport-{{ loop.index }}">
+          <div class="figma-master-canvas" id="canvas-{{ loop.index }}">
+            <div class="figma-blueprint-grid"></div>
 
-            <!-- Top Header Row -->
-            <div style="display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 1;">
-              <div style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 22px; border-radius: 999px; background: {{ p.theme.pill_bg }}; border: 1px solid {{ p.theme.border }}; color: {{ p.theme.p }}; font-size: 15px; font-weight: 800; text-transform: uppercase;">
-                <span style="width: 9px; height: 9px; border-radius: 50%; background: {{ p.theme.p }}; box-shadow: 0 0 10px {{ p.theme.p }};"></span>
-                <span>{{ p.data.badge }}</span>
-              </div>
-              <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 12px; padding: 9px 20px; font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 700; color: {{ p.theme.p }};">
-                {{ p.data.stat }}
-              </div>
+            <!-- 1. Top Badges Row -->
+            <div class="figma-badge-row">
+              <div class="figma-badge-chip">{{ p.badge }}</div>
+              <div class="figma-metric-pill">{{ p.metric_badge }}</div>
             </div>
 
-            <!-- ==============================================
-                 LAYOUT 1: HERO GIANT CARD
-                 ============================================== -->
-            {% if p.data.layout == 'hero_giant' %}
-            <div style="position: relative; z-index: 1; margin: 15px 0;">
-              <h1 style="font-size: 54px; font-weight: 900; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 12px;">{{ p.data.title | safe }}</h1>
-              <p style="font-size: 21px; line-height: 1.5; color: #cbd5e1;">{{ p.data.subtitle }}</p>
+            <!-- 2. Headline & Pre-title -->
+            <div class="figma-headline-wrap">
+              <div class="figma-pre-title">{{ p.headline_pre }}</div>
+              <h1 class="figma-headline-text">{{ p.headline_main | safe }}</h1>
             </div>
 
-            <!-- Giant Hero Box -->
-            <div style="background: {{ p.theme.card_bg }}; border: 1.5px solid {{ p.theme.border }}; border-radius: 24px; padding: 32px 30px; position: relative; z-index: 1; box-shadow: 0 15px 40px rgba(0,0,0,0.5);">
-              <div style="display: inline-block; background: {{ p.theme.p }}; color: #000; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 900; padding: 6px 14px; border-radius: 8px; margin-bottom: 14px;">{{ p.data.hero_card.tag }}</div>
-              <div style="font-size: 28px; font-weight: 900; color: #fff; margin-bottom: 10px;">{{ p.data.hero_card.val }}</div>
-              <div style="font-size: 18px; line-height: 1.5; color: #cbd5e1;">{{ p.data.hero_card.desc }}</div>
-            </div>
+            <!-- 3. Oversized Keyword Typography (Subtle Background Touch) -->
+            <div class="figma-watermark-keyword">{{ p.keyword_oversized }}</div>
 
-            <!-- 2 Mini Bullets -->
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; position: relative; z-index: 1;">
-              {% for pt in p.data.points %}
-              <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 18px 20px;">
-                <div style="font-size: 18px; font-weight: 800; color: {{ p.theme.p }}; margin-bottom: 6px;">{{ pt.title }}</div>
-                <div style="font-size: 15px; color: #94a3b8; line-height: 1.4;">{{ pt.desc }}</div>
+            <!-- 4. 3 Floating Figma Data Cards -->
+            <div class="figma-nodes-grid">
+              {% for node in p.data_nodes %}
+              <div class="figma-node-card">
+                <div class="figma-node-left">
+                  <div class="figma-node-label">{{ node.label }}</div>
+                  <div class="figma-node-desc">{{ node.desc }}</div>
+                </div>
+                <div class="figma-node-val-badge">{{ node.val }}</div>
               </div>
               {% endfor %}
             </div>
 
-            <!-- ==============================================
-                 LAYOUT 2: 2x2 MATRIX QUADRANT
-                 ============================================== -->
-            {% elif p.data.layout == 'matrix_4' %}
-            <div style="position: relative; z-index: 1; margin: 15px 0;">
-              <h1 style="font-size: 52px; font-weight: 900; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 10px;">{{ p.data.title | safe }}</h1>
-              <p style="font-size: 20px; line-height: 1.45; color: #cbd5e1;">{{ p.data.subtitle }}</p>
+            <!-- 5. Golden Rule Banner -->
+            <div class="figma-golden-rule-box">
+              <div class="figma-gold-tag">Strategic Rule</div>
+              <div class="figma-rule-text">"{{ p.golden_rule }}"</div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; position: relative; z-index: 1;">
-              {% for m in p.data.matrix %}
-              <div style="background: {{ p.theme.card_bg }}; border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 24px 22px; position: relative; overflow: hidden;">
-                <div style="position: absolute; left: 0; top: 0; width: 4px; height: 100%; background: {{ p.theme.p }};"></div>
-                <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 800; color: {{ p.theme.p }}; margin-bottom: 8px;">{{ m.tag }} • {{ m.num }}</div>
-                <div style="font-size: 21px; font-weight: 800; color: #fff; margin-bottom: 8px;">{{ m.title }}</div>
-                <div style="font-size: 15px; line-height: 1.45; color: #cbd5e1;">{{ m.desc }}</div>
-              </div>
-              {% endfor %}
-            </div>
-
-            <!-- ==============================================
-                 LAYOUT 3: SEARCH BAR + STEP CARDS
-                 ============================================== -->
-            {% elif p.data.layout == 'search_steps' %}
-            <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 18px; padding: 16px 22px; display: flex; align-items: center; justify-content: space-between; margin: 15px 0; position: relative; z-index: 1;">
-              <div style="display: flex; align-items: center; gap: 14px;">
-                <svg width="26" height="26" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
-                <div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; color: #e2e8f0; font-weight: 600;">{{ p.data.search_ui }}</div>
-              </div>
-              <div style="background: {{ p.theme.p }}; color: #000; font-size: 13px; font-weight: 800; padding: 6px 14px; border-radius: 8px;">#1 VERIFIED</div>
-            </div>
-
-            <div style="position: relative; z-index: 1; margin-bottom: 15px;">
-              <h1 style="font-size: 50px; font-weight: 900; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 10px;">{{ p.data.title | safe }}</h1>
-              <p style="font-size: 20px; line-height: 1.45; color: #cbd5e1;">{{ p.data.subtitle }}</p>
-            </div>
-
-            <div style="display: flex; flex-direction: column; gap: 14px; position: relative; z-index: 1;">
-              {% for s in p.data.steps %}
-              <div style="background: {{ p.theme.card_bg }}; border: 1px solid rgba(255,255,255,0.1); border-radius: 18px; padding: 20px 22px; display: flex; align-items: flex-start; gap: 16px;">
-                <div style="background: {{ p.theme.pill_bg }}; color: {{ p.theme.p }}; border: 1px solid {{ p.theme.border }}; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 800; padding: 6px 12px; border-radius: 8px;">{{ s.num }}</div>
+            <!-- 6. Footer Signature -->
+            <div class="figma-footer-row">
+              <div class="figma-author-wrap">
+                <div class="figma-author-circle">AS</div>
                 <div>
-                  <div style="font-size: 20px; font-weight: 800; color: #fff; margin-bottom: 4px;">{{ s.title }}</div>
-                  <div style="font-size: 16px; color: #94a3b8; line-height: 1.4;">{{ s.desc }}</div>
+                  <div class="figma-author-name">Achhar Sharma</div>
+                  <div class="figma-author-title">SEO Architecture & Growth</div>
                 </div>
               </div>
-              {% endfor %}
-            </div>
-
-            <!-- ==============================================
-                 LAYOUT 4: BEFORE vs AFTER SPLIT COMPARISON
-                 ============================================== -->
-            {% elif p.data.layout == 'split_compare' %}
-            <div style="position: relative; z-index: 1; margin: 15px 0;">
-              <h1 style="font-size: 52px; font-weight: 900; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 10px;">{{ p.data.title | safe }}</h1>
-              <p style="font-size: 20px; line-height: 1.45; color: #cbd5e1;">{{ p.data.subtitle }}</p>
-            </div>
-
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; position: relative; z-index: 1;">
-              {% for cp in p.data.compare %}
-              <div style="background: {{ p.theme.card_bg }}; border: 1.5px solid {{ cp.color }}; border-radius: 22px; padding: 26px 22px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-                <div style="background: {{ cp.color }}; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 900; padding: 6px 12px; border-radius: 8px; display: inline-block; margin-bottom: 16px;">{{ cp.type }}</div>
-                {% for pt in cp.points %}
-                <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 14px; font-size: 17px; line-height: 1.45; color: #e2e8f0;">
-                  <span style="color: {{ cp.color }}; font-weight: 900;">•</span>
-                  <span>{{ pt }}</span>
-                </div>
-                {% endfor %}
-              </div>
-              {% endfor %}
-            </div>
-            {% endif %}
-
-            <!-- Bottom Master Rule -->
-            <div style="background: rgba(15, 23, 42, 0.9); border: 1px solid {{ p.theme.border }}; border-radius: 18px; padding: 20px 24px; display: flex; align-items: center; gap: 16px; position: relative; z-index: 1;">
-              <div style="background: linear-gradient(135deg, {{ p.theme.p }}, {{ p.theme.s }}); color: #000; font-size: 13px; font-weight: 900; padding: 6px 14px; border-radius: 8px; text-transform: uppercase;">Master Rule</div>
-              <div style="font-size: 18px; font-weight: 600; color: #e2e8f0; line-height: 1.4;">"{{ p.data.golden_rule }}"</div>
-            </div>
-
-            <!-- Footer -->
-            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 22px; border-top: 1px solid rgba(255, 255, 255, 0.08); position: relative; z-index: 1;">
-              <div style="display: flex; align-items: center; gap: 14px;">
-                <div style="width: 46px; height: 46px; border-radius: 50%; background: linear-gradient(135deg, {{ p.theme.p }}, {{ p.theme.s }}); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 18px; color: #030712;">AS</div>
-                <div>
-                  <div style="font-size: 19px; font-weight: 800; color: #f8fafc;">Achhar Sharma</div>
-                  <div style="font-size: 13px; color: #64748b;">Daily SEO Growth in Hinglish</div>
-                </div>
-              </div>
-              <div style="font-size: 15px; color: {{ p.theme.p }}; font-weight: 700;">Save for later 📌</div>
+              <div class="figma-micro-watermark">{{ p.micro_label }}</div>
             </div>
 
           </div>
         </div>
 
-        <div class="caption-box" id="caption-{{ p.id }}">{{ p.data.caption }}</div>
+        <div class="caption-box" id="caption-{{ loop.index }}">{{ p.caption }}</div>
 
         <div class="actions-row">
-          <button class="btn btn-copy" onclick="copyCaption('caption-{{ p.id }}', this)">📋 Copy Caption</button>
-          <button class="btn btn-dl" style="background: linear-gradient(135deg, {{ p.theme.p }}, {{ p.theme.s }}); color: #000;" onclick="downloadImage('artboard-{{ p.id }}', 'seo_{{ p.theme.id }}_{{ p.data.layout }}.png', this)">💾 Download 4K Graphic</button>
+          <button class="btn btn-copy" onclick="copyCaption('caption-{{ loop.index }}', this)">📋 Copy Caption</button>
+          <button class="btn btn-dl" onclick="downloadImage('canvas-{{ loop.index }}', 'figma_seo_post_{{ loop.index }}.png', this)">💾 Download 4K Graphic</button>
         </div>
       </div>
       {% endfor %}
@@ -600,42 +835,42 @@ HTML_TEMPLATE = """
   </div>
 
   <script>
-    // EXACT VIEWPORT AUTO-CALCULATOR: Fits 100% full artboard inside mobile screen!
-    function fitArtboardsToMobile() {
+    // PRECISE AUTO-SCALER FOR MOBILE: Calculates viewport width and fits 1080x1350 perfectly!
+    function fitFigmaArtboards() {
       [1, 2].forEach(id => {
         const vp = document.getElementById('viewport-' + id);
-        const art = document.getElementById('artboard-' + id);
-        if (vp && art) {
-          const containerWidth = vp.getBoundingClientRect().width;
-          const scale = containerWidth / 1080;
-          art.style.transform = `scale(${scale})`;
+        const cv = document.getElementById('canvas-' + id);
+        if (vp && cv) {
+          const w = vp.getBoundingClientRect().width;
+          const scale = w / 1080;
+          cv.style.transform = `scale(${scale})`;
           vp.style.height = (1350 * scale) + 'px';
         }
       });
     }
 
-    window.addEventListener('resize', fitArtboardsToMobile);
-    window.addEventListener('orientationchange', fitArtboardsToMobile);
-    document.addEventListener('DOMContentLoaded', fitArtboardsToMobile);
-    setTimeout(fitArtboardsToMobile, 250);
-    setTimeout(fitArtboardsToMobile, 750);
+    window.addEventListener('resize', fitFigmaArtboards);
+    window.addEventListener('orientationchange', fitFigmaArtboards);
+    document.addEventListener('DOMContentLoaded', fitFigmaArtboards);
+    setTimeout(fitFigmaArtboards, 250);
+    setTimeout(fitFigmaArtboards, 750);
 
     function copyCaption(id, btn) {
       const text = document.getElementById(id).innerText;
       navigator.clipboard.writeText(text).then(() => {
-        const originalText = btn.innerHTML;
+        const orig = btn.innerHTML;
         btn.innerHTML = "✅ Copied to Clipboard!";
         btn.classList.add('toast-active');
         setTimeout(() => {
-          btn.innerHTML = originalText;
+          btn.innerHTML = orig;
           btn.classList.remove('toast-active');
         }, 2000);
       });
     }
 
-    function generateNewBatch() {
-      const btn = document.getElementById('genBtn');
-      btn.innerHTML = "⏳ Shuffling Shapes, Colors & AI Topics...";
+    function shuffleFigmaPost() {
+      const btn = document.getElementById('shufBtn');
+      btn.innerHTML = "⏳ Shuffling Figma Archetype...";
       btn.disabled = true;
 
       fetch('/api/shuffle', { method: 'POST' })
@@ -648,23 +883,23 @@ HTML_TEMPLATE = """
         });
     }
 
-    function downloadImage(artboardId, fileName, btn) {
-      const artboard = document.getElementById(artboardId);
-      const originalTransform = artboard.style.transform;
+    function downloadImage(canvasId, fileName, btn) {
+      const canvas = document.getElementById(canvasId);
+      const originalTransform = canvas.style.transform;
       const originalText = btn.innerHTML;
       btn.innerHTML = "⏳ Exporting 4K...";
       btn.disabled = true;
 
-      artboard.style.transform = 'none';
+      canvas.style.transform = 'none';
 
-      html2canvas(artboard, {
+      html2canvas(canvas, {
         width: 1080,
         height: 1350,
         scale: 2,
         useCORS: true,
-        backgroundColor: null
+        backgroundColor: '#ffffff'
       }).then(resCanvas => {
-        artboard.style.transform = originalTransform;
+        canvas.style.transform = originalTransform;
         btn.innerHTML = originalText;
         btn.disabled = false;
 
@@ -673,7 +908,7 @@ HTML_TEMPLATE = """
         link.href = resCanvas.toDataURL('image/png');
         link.click();
       }).catch(err => {
-        artboard.style.transform = originalTransform;
+        canvas.style.transform = originalTransform;
         btn.innerHTML = originalText;
         btn.disabled = false;
         alert('Export error, please try again.');
@@ -704,23 +939,16 @@ def index():
     state = get_current_state()
     offset = state.get("offset", 0)
 
-    # Pick 2 completely different structures & 2 completely different color palettes
-    s1_idx = offset % len(POST_STRUCTURE_DATABASE)
-    s2_idx = (offset + 1) % len(POST_STRUCTURE_DATABASE)
+    p1_idx = offset % len(FIGMA_STYLES)
+    p2_idx = (offset + 1) % len(FIGMA_STYLES)
 
-    p1_col = PALETTES[offset % len(PALETTES)]
-    p2_col = PALETTES[(offset + 3) % len(PALETTES)]
-
-    posts = [
-        {"id": 1, "theme": p1_col, "data": POST_STRUCTURE_DATABASE[s1_idx]},
-        {"id": 2, "theme": p2_col, "data": POST_STRUCTURE_DATABASE[s2_idx]}
-    ]
+    posts = [FIGMA_STYLES[p1_idx], FIGMA_STYLES[p2_idx]]
     return render_template_string(HTML_TEMPLATE, posts=posts)
 
 @app.route("/api/shuffle", methods=["POST"])
 def api_shuffle():
     state = get_current_state()
-    state["offset"] = (state.get("offset", 0) + 2) % 100
+    state["offset"] = (state.get("offset", 0) + 1) % len(FIGMA_STYLES)
     save_current_state(state)
     return jsonify({"status": "ok"})
 
